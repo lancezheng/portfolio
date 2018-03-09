@@ -9,7 +9,7 @@
  * 06. Header Bar
  * 07. Navigation
  * 08. Footer
- * 09. Hero
+ * 09. project
  * 10. Listings
  * 11. Team
  * 12. Others
@@ -45,7 +45,7 @@
   --wrap-lg: 47rem;
   --wrap-md: 30rem;
   --wrap-sm: 22rem;
-  --wrap-padding: 1rem;
+  --wrap-padding: 0rem;
 
 }
 /* --------------------------------------------------------------------------*/
@@ -370,11 +370,11 @@ img {
 /* --------------------------------------------------------------------------*/
 
 .header-bar {
-  position: absolute;
+  position: fixed;
   z-index: 10;
-  padding-bottom: 4rem;
-  width: 100%;
 
+  width: 100%;
+ background-color: white;
 }
 
 .logo {
@@ -503,21 +503,32 @@ img {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 10. Hero                                                                  */
+/* 10. Project                                                                  */
 /* --------------------------------------------------------------------------*/
 
-.hero {
+.project {
   position: relative;
   background-color: var(--color-day);
   background-size: cover;
+  height: 25.5rem; /* 360px */
+}
+.project--landing{
   height: 7.5rem; /* 360px */
 }
+.project--one{
+  background-image: url(../img/project-one.jpg);
+  background-position: top center;
+}
+.project--two{
+  background-image: url(../img/project-two.jpg);
+  background-position: top center;
+}
 
-.hero__wrap {
+.project__wrap {
   height: 100%;
 }
 
-.hero__content {
+.project__content {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -528,26 +539,26 @@ img {
   width: 100%;
 }
 
-.hero__title {
+.project__title {
   margin-bottom: 0;
   font-size: 2.370192597rem;
   line-height: 1.3333;
-  color: white;
+  color: var(--color-night);
   text-align: center;
 }
 
-.hero__tagline {
+.project__tagline {
   margin-bottom: 0;
   font-size: 1.777728889rem;
   line-height: 1.3333;
   color: white;
 }
 
-.hero__btn-cta {
+.project__btn-cta {
   margin-top: 1rem;
 }
 
-.hero__citation {
+.project__citation {
   position: absolute;
   right: var(--wrap-padding);
   bottom: 0;
@@ -559,6 +570,13 @@ img {
   opacity: 0.5;
 }
 
+.project--link{
+  color:var(--color-night);
+}
+.project--link:hover, .project--link:active, .project--link:focus {
+  color:var(--color-light-orange);
+}
+
 /* --------------------------------------------------------------------------*/
 /* 11. Listings                                                              */
 /* --------------------------------------------------------------------------*/
@@ -568,25 +586,39 @@ img {
   margin-bottom: 1.6666rem;
   list-style: none;
 }
-
+.listings--project{
+  background-color: var(--color-gray-4);
+  margin-top: 1rem;
+}
 .listings__item {
   flex-shrink: 0;
   margin-bottom: 0.2rem;
 }
+.listings__item--content--landing{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0;
+  padding: 0 1rem 8rem 1rem;
+  height: 100%;
+  color:var(--color-day);
+  line-height: 1.6666;
 
+}
 .listings__item-content {
   display: flex;
   flex-direction: column;
   margin-bottom: 0;
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
   height: 100%;
   background-color: var(--color-gray-4);
+
   line-height: 1.6666;
 }
 
 .listings__item-content--alt {
   background-color: white;
 }
+
 
 .listings__item-title {
   display: block;
@@ -729,7 +761,31 @@ img {
   width:45%;
   float:right;
   text-align: right;
+  padding-top:7rem;
+  padding-bottom:7em;
 }
 #name h2 span{
   background-color:var(--color-sunset-orange);
+}
+
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.listings__project--one{
+  background-image: url(../img/project-one.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.listings__project--two{
+  background-image: url(../img/project-two.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+
+.intro{
+  font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+
 }
