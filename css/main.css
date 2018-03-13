@@ -11,9 +11,8 @@
  * 08. Footer
  * 09. project
  * 10. Listings
- * 11. Team
  * 12. Others
- * 13. > 640px (nav-only)
+ * 13. > 640px
  */
 
 /* --------------------------------------------------------------------------*/
@@ -26,6 +25,7 @@
   --color-background-gray: #F6F6F6;
   --color-night: #000000;
   --color-light-orange: #fa871d;
+  --color-warm-yellow: #f5f1e9;
   --color-sunset-orange: #FD683A;
   --color-sunset-red: #F9273A;
   --color-dark-blue: #1377d5;
@@ -37,12 +37,13 @@
   --color-anchor: #0275d8;
   --color-anchor-hover: #025aa5;
 
+
   /* Fonts */
   --font-primary: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   --font-secondary: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
 
   /* Metrics */
-  --wrap-lg: 47rem;
+  --wrap-lg: 66rem;
   --wrap-md: 30rem;
   --wrap-sm: 22rem;
   --wrap-padding: 0rem;
@@ -243,6 +244,8 @@ img {
 .section {
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 .section--alt {
@@ -372,9 +375,10 @@ img {
 .header-bar {
   position: fixed;
   z-index: 10;
-
   width: 100%;
  background-color: white;
+ padding-left: 6%;
+ padding-right: 6%;
 }
 
 .logo {
@@ -386,12 +390,11 @@ img {
   padding-bottom: 1rem;
   padding-right: 1rem;
   line-height: 1;
-  color: white;
 }
 .logo:hover, .logo:active, .logo:focus {
   transform: scale(1.1);
   text-decoration: none;
-  color: white;
+
 }
 .logo:active {
   top: 2px;
@@ -479,9 +482,9 @@ img {
 .footer {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: var(--color-night);
+  background-color: var(--color-day);
   text-align: center;
-  color: white;
+  color: var(--color-night);
 }
 
 .footer__cta {
@@ -508,21 +511,24 @@ img {
 
 .project {
   position: relative;
-  background-color: var(--color-day);
+  background-color: #f1b851;
   background-size: cover;
-  height: 25.5rem; /* 360px */
+  height: 25.5rem;
+  margin-left:4%;
+  margin-right:4%;
+
 }
-.project--landing{
-  height: 7.5rem; /* 360px */
-}
-.project--one{
+
+.portfolio--project--one{
   background-image: url(../img/project-one.jpg);
   background-position: top center;
 }
-.project--two{
+
+.portfolio--project--two{
   background-image: url(../img/project-two.jpg);
   background-position: top center;
 }
+
 
 .project__wrap {
   height: 100%;
@@ -582,9 +588,13 @@ img {
 /* --------------------------------------------------------------------------*/
 
 .listings {
-  padding-left: 0;
-  margin-bottom: 1.6666rem;
+  padding-left: 1%;
+  padding-right:1%;
+  margin-bottom: 2.6666rem;
+  margin-top: 2.6666rem;
   list-style: none;
+
+
 }
 .listings--project{
   background-color: var(--color-gray-4);
@@ -592,7 +602,7 @@ img {
 }
 .listings__item {
   flex-shrink: 0;
-  margin-bottom: 0.2rem;
+
 }
 .listings__item--content--landing{
   display: flex;
@@ -615,20 +625,17 @@ img {
   line-height: 1.6666;
 }
 
-.listings__item-content--alt {
-  background-color: white;
-}
 
 
 .listings__item-title {
   display: block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 600;
 }
 
 .listings__item-prop {
   display: block;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 .listings__item-prop:last-of-type {
   margin-bottom: 0.5rem;
@@ -705,9 +712,6 @@ img {
   margin-bottom: 0.5rem;
 }
 
-/* --------------------------------------------------------------------------*/
-/* 14. > 640px (nav-only)                                                    */
-/* --------------------------------------------------------------------------*/
 
 @media screen and (min-width: 40em) {
 
@@ -741,33 +745,73 @@ img {
 
   .logo {
     padding-top: 1.5rem;
-    font-size: 1.5rem;
+
+  }
+  .img--logo{
+    max-width: 2.5rem;
+  }
+  .intro-name{
+    font-size:2.077689rem;
+    font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  }
+  .intro-work{
+    font-size:1.6333rem;
+    font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   }
 
+}
+
+@media screen and (max-width: 57em) {
+
+  .intro-name{
+    font-size:1.6333rem;
+    font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  }
+  .intro-work{
+    font-size:1.1333rem;
+    font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+  }
+}
+@media screen and (max-width: 630px) {
+
+  .landing-image{
+     width: 100%;
+
+  }
+  .intro-text{
+    width:100%
+  }
 }
 /* --------------------------------------------------------------------------*/
 /* 15. < 640px (nav-only)                                                    */
 /* --------------------------------------------------------------------------*/
-@media screen and (max-width: 600px)  {
-  .logo img{
-    width: 100px !important;
+@media screen and (max-width: 40em)  {
+
+  .img--logo{
+    max-width: 2rem;
   }
+
 }
 
 
 #name{
-  margin-left: 20%;
-  margin-right: 35%;
-  width:45%;
-  float:right;
-  text-align: right;
-  padding-top:7rem;
-  padding-bottom:7em;
-}
-#name h2 span{
-  background-color:var(--color-sunset-orange);
+
+  padding-top:14rem;
+  padding-bottom:12em;
 }
 
+#works{
+  background-color:var(--color-day);
+  padding-top:100px;
+  margin-top: -100px;
+
+}
+#about{
+  background-color:var(--color-warm-yellow);
+  padding-top:100px;
+
+
+}
 .clearfix::after {
   display: table;
   clear: both;
@@ -786,6 +830,6 @@ img {
 }
 
 .intro{
-  font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
-
+  background-color:var(--color-warm-yellow);
+  padding-left: 21%;
 }
