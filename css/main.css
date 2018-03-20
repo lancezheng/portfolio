@@ -1,6 +1,7 @@
 /**
  * Main Stylesheet
  * ---
+ * 00. Variables
  * 01. Base
  * 02. Utilities
  * 03. Layout
@@ -11,8 +12,8 @@
  * 08. Footer
  * 09. project
  * 10. Listings
- * 12. Others
- * 13. different px
+ * 11. Others
+ * 12. different px
  */
 
 /* --------------------------------------------------------------------------*/
@@ -29,6 +30,7 @@
   --color-sunset-orange: #FD683A;
   --color-sunset-red: #F9273A;
   --color-dark-blue: #1377d5;
+
   --color-gray-1: #333;
   --color-gray-2: #999;
   --color-gray-3: #CCC;
@@ -37,6 +39,11 @@
   --color-anchor: #0275d8;
   --color-anchor-hover: #025aa5;
 
+  /* Colors for project listing */
+  --color-peach-pink:#f99b85;
+  --color-night-blue:#0f309c;
+  --color-banana-yellow:#f0b75a;
+  --color-cold-purple:#454f8d;
 
   /* Fonts */
   --font-primary: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -369,7 +376,7 @@ img {
   background-color: #C75A11;
 }
 /* --------------------------------------------------------------------------*/
-/* 07. Header bar                                                            */
+/* 06. Header bar                                                            */
 /* --------------------------------------------------------------------------*/
 
 .header-bar {
@@ -402,7 +409,7 @@ img {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 08. Navigation                                                            */
+/* 07. Navigation                                                            */
 /* --------------------------------------------------------------------------*/
 
 .nav {
@@ -476,7 +483,7 @@ img {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 09. Footer                                                                */
+/* 08. Footer                                                                */
 /* --------------------------------------------------------------------------*/
 
 .footer {
@@ -487,26 +494,15 @@ img {
   color: var(--color-night);
 }
 
-.footer__cta {
-  margin-bottom: 2rem;
-}
 
-.footer__btn-cta {
-  margin-top: 1rem;
-}
 
 .footer__copyright {
   margin-bottom: 0;
 }
 
-.footer__note {
-  margin-top: 0.25rem;
-  font-size: 0.75rem;
-  color: rgba(255,255,255,0.3);
-}
 
 /* --------------------------------------------------------------------------*/
-/* 10. Project                                                                  */
+/* 9. Project                                                                  */
 /* --------------------------------------------------------------------------*/
 
 .project {
@@ -561,38 +557,25 @@ img {
   text-align: center;
 }
 
-.project__tagline {
-  margin-bottom: 0;
-  font-size: 1.777728889rem;
-  line-height: 1.3333;
-  color: white;
-}
-
-.project__btn-cta {
-  margin-top: 1rem;
-}
-
-.project__citation {
-  position: absolute;
-  right: var(--wrap-padding);
-  bottom: 0;
-  margin-bottom: 0.5rem;
-  padding: 0.125rem 0.25rem;
-  background-color: black;
-  font-size: 0.5rem;
-  color: rgba(255,255,255,0.5);
-  opacity: 0.5;
-}
-
 .project--link{
   color:var(--color-night);
 }
 .project--link:hover, .project--link:active, .project--link:focus {
-  color:var(--color-light-orange);
+  padding-top:1em;
+  text-decoration: none;
+}
+
+
+.project-image{
+ max-width: 86%;
+ padding-left: 7%;
+ padding-top:2em;
+ padding-bottom:2em;
+ margin-bottom:1em;
 }
 
 /* --------------------------------------------------------------------------*/
-/* 11. Listings                                                              */
+/* 10. Listings                                                              */
 /* --------------------------------------------------------------------------*/
 
 .listings {
@@ -649,23 +632,50 @@ img {
   margin-bottom: 0.5rem;
 }
 
-.listings__item-cta {
-  margin-top: auto;
+
+.listings__project--one{
+  background-image: url(../img/project-one.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.listings__project--one:hover,.listings__project--one:active,.listings__project--one:hover:focus{
+  background-image: none;
+  background-color: var(--color-night-blue);
+}
+.listings__project--two{
+  background-image: url(../img/project-two.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.listings__project--two:hover,.listings__project--two:active,.listings__project--two:hover:focus{
+  background-image: none;
+  background-color: var(--color-banana-yellow);
+}
+.listings__project--three{
+  background-image: url(../img/project-three.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.listings__project--three:hover,.listings__project--three:active,.listings__project--three:hover:focus{
+  background-image: none;
+  background-color: var(--color-peach-pink);
+}
+.listings__project--four{
+  background-image: url(../img/project-four.jpg);
+  background-position: top center;
+  background-size: cover;
 }
 
-
+.listings__project--four:hover,.listings__project--four:active, .listings__project--four:hover:focus{
+  background-image: none;
+  background-color: var(--color-cold-purple);
+}
 /* --------------------------------------------------------------------------*/
-/* 13. Others                                                                */
+/* 11. Others                                                                */
 /* --------------------------------------------------------------------------*/
 
-.map {
-  width: 100%;
-}
 
-.grid-list {
-  padding-left: 0.5rem;
-  list-style-position: inside;
-}
+
 
 .img-item {
   margin-bottom: 0.5rem;
@@ -695,38 +705,10 @@ img {
   content: '';
 }
 
-.listings__project--one{
-  background-image: url(../img/project-one.jpg);
-  background-position: top center;
-  background-size: cover;
-}
-.listings__project--two{
-  background-image: url(../img/project-two.jpg);
-  background-position: top center;
-  background-size: cover;
-}
-.listings__project--three{
-  background-image: url(../img/project-three.jpg);
-  background-position: top center;
-  background-size: cover;
-}
-.listings__project--four{
-  background-image: url(../img/project-four.jpg);
-  background-position: top center;
-  background-size: cover;
-}
 
 .intro{
   background-color:var(--color-warm-yellow);
   padding-left: 21%;
-}
-
-.project-image{
- max-width: 86%;
- padding-left: 7%;
- padding-top:2em;
- padding-bottom:2em;
- margin-bottom:1em;
 }
 
 
@@ -735,7 +717,7 @@ img {
 }
 
 /* --------------------------------------------------------------------------*/
-/* 15. different px                                                          */
+/* 12. different size                                                          */
 /* --------------------------------------------------------------------------*/
 @media screen and (min-width: 40em) {
 
