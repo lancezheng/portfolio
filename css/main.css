@@ -12,7 +12,7 @@
  * 09. project
  * 10. Listings
  * 12. Others
- * 13. > 640px
+ * 13. different px
  */
 
 /* --------------------------------------------------------------------------*/
@@ -359,7 +359,7 @@ img {
 .btn--primary {
   border-color: transparent;
   background-color:var(--color-light-orange);
-  color: var(--color-night);
+  color: var(--color-gray-4);
 }
 .btn--primary:hover, .btn--primary:active, .btn--primary:focus {
   background-color:var(--color-sunset-orange);
@@ -426,7 +426,7 @@ img {
   list-style: none;
 }
 .nav__menu:hover {
-  background-color: rgba(0,0,0,0.72);
+  background-color: var(--color-day);
 }
 
 /* Menu chevron */
@@ -526,6 +526,10 @@ img {
 
 .portfolio--project--two{
   background-image: url(../img/project-two.jpg);
+  background-position: top center;
+}
+.portfolio--project--four{
+  background-image: url(../img/project-four.jpg);
   background-position: top center;
 }
 
@@ -629,13 +633,13 @@ img {
 
 .listings__item-title {
   display: block;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
 .listings__item-prop {
   display: block;
-  font-size: 1rem;
+  font-size: 0.8rem;
 }
 .listings__item-prop:last-of-type {
   margin-bottom: 0.5rem;
@@ -645,55 +649,6 @@ img {
   margin-top: auto;
 }
 
-/* --------------------------------------------------------------------------*/
-/* 12. Team                                                                  */
-/* --------------------------------------------------------------------------*/
-
-.team-group {
-  margin-bottom: 1.6666rem;
-}
-
-.team-item {
-  margin-bottom: 1rem;
-}
-
-.team-item__content {
-  display: flex;
-  background-color: white;
-  height: 100%;
-}
-.team-item__content--alt {
-  display: flex;
-  background-color:var(--color-gray-4);
-  height: 100%;
-}
-
-.team-item__photo {
-  width: 8rem;
-  height: auto;
-  padding: 0.5rem 1rem 0.5rem 0.5rem;
-}
-
-.team-item__info {
-  width: 100%;
-  padding-right: 1rem;
-}
-
-.team-item__info > p {
-  margin-bottom: 0.5rem;
-}
-
-.team-item__info > p:first-child {
-  padding-top: 0.75rem;
-}
-
-.team-item__info > p:last-child {
-  margin-bottom: 1rem;
-}
-
-.team-item__bio {
-  font-size: 0.875rem;
-}
 
 /* --------------------------------------------------------------------------*/
 /* 13. Others                                                                */
@@ -712,7 +667,72 @@ img {
   margin-bottom: 0.5rem;
 }
 
+#name{
 
+  padding-top:7rem;
+  padding-bottom:9em;
+}
+
+#works{
+  background-color:var(--color-day);
+  padding-top:100px;
+  margin-top: -100px;
+
+}
+#about{
+  background-color:var(--color-warm-yellow);
+  padding-top:100px;
+
+
+}
+.clearfix::after {
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.listings__project--one{
+  background-image: url(../img/project-one.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.listings__project--two{
+  background-image: url(../img/project-two.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+.listings__project--three{
+  background-color: #fb9b82;
+}
+.listings__project--four{
+  background-image: url(../img/project-four.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+
+.intro{
+  background-color:var(--color-warm-yellow);
+  padding-left: 21%;
+}
+
+.project-image{
+ max-width: 86%;
+ padding-left: 7%;
+ padding-top:2em;
+ padding-bottom:2em;
+ margin-bottom:1em;
+}
+.interface-design-image{
+  max-width:78%;
+}
+
+.landing-image-two{
+   max-width: 85%;
+}
+
+/* --------------------------------------------------------------------------*/
+/* 15. different px                                                          */
+/* --------------------------------------------------------------------------*/
 @media screen and (min-width: 40em) {
 
   .nav-btn {
@@ -758,8 +778,15 @@ img {
     font-size:1.6333rem;
     font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   }
+  .landing-image{
+     max-width: 66%;
+  }
 
+  .intro-text{
+  padding-top: 5%;
+  }
 }
+
 
 @media screen and (max-width: 57em) {
 
@@ -771,65 +798,48 @@ img {
     font-size:1.1333rem;
     font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   }
-}
-@media screen and (max-width: 630px) {
-
-  .landing-image{
-     width: 100%;
-
+  .bio{
+    font-size: 0.8rem;
   }
-  .intro-text{
-    width:100%
+  .landing-image-two{
+     max-width: 95%;
   }
 }
-/* --------------------------------------------------------------------------*/
-/* 15. < 640px (nav-only)                                                    */
-/* --------------------------------------------------------------------------*/
 @media screen and (max-width: 40em)  {
 
   .img--logo{
     max-width: 2rem;
   }
+  .landing-image{
+     max-width: 80%;
+  }
+  #name {
+    padding-top: 5rem;
+    padding-bottom: 8em;
+}
+}
+@media screen and (max-width: 629px) {
+
+  .landing-image{
+     max-width: 80%;
+     margin-left:8%;
+
+  }
+  .intro-text{
+    width:100%;
+    margin-left:10%;
+  }
 
 }
+@media screen and (max-width: 560px) {
 
-
-#name{
-
-  padding-top:14rem;
-  padding-bottom:12em;
-}
-
-#works{
-  background-color:var(--color-day);
-  padding-top:100px;
-  margin-top: -100px;
+  .landing-image{
+     max-width: 60%;
+     margin-left: 5%
+  }
+  .landing-image-two{
+     max-width: 80%;
+  }
 
 }
-#about{
-  background-color:var(--color-warm-yellow);
-  padding-top:100px;
-
-
-}
-.clearfix::after {
-  display: table;
-  clear: both;
-  content: '';
-}
-
-.listings__project--one{
-  background-image: url(../img/project-one.jpg);
-  background-position: top center;
-  background-size: cover;
-}
-.listings__project--two{
-  background-image: url(../img/project-two.jpg);
-  background-position: top center;
-  background-size: cover;
-}
-
-.intro{
-  background-color:var(--color-warm-yellow);
-  padding-left: 21%;
 }
