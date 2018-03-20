@@ -528,6 +528,10 @@ img {
   background-image: url(../img/project-two.jpg);
   background-position: top center;
 }
+.portfolio--project--three{
+  background-image: url(../img/project-three.jpg);
+  background-position: top center;
+}
 .portfolio--project--four{
   background-image: url(../img/project-four.jpg);
   background-position: top center;
@@ -702,7 +706,9 @@ img {
   background-size: cover;
 }
 .listings__project--three{
-  background-color: #fb9b82;
+  background-image: url(../img/project-three.jpg);
+  background-position: top center;
+  background-size: cover;
 }
 .listings__project--four{
   background-image: url(../img/project-four.jpg);
