@@ -14,7 +14,7 @@
     <div class="sg-sidebar">
       <header class="sg-sidebar__content">
         <h1 class="sg-sidebar__logo">
-          <a href="index.html" class="logo">
+          <a href="styleguide.html" class="logo">
               <img src="img/logo1.png" alt="Logo" class="img-responsive">
           </a>
         </h1>
@@ -96,8 +96,12 @@
               <span class="sg-color__name">$color-day (background)</span>
               <span class="sg-color__value">#FFFFFF</span>
             </li>
+            <li class="sg-color sg-color-warm-yellow">
+              <span class="sg-color__name">$color-warm-yellow (background)</span>
+              <span class="sg-color__value">#f5f1e9</span>
+            </li>
             <li class="sg-color sg-color-background-gray">
-              <span class="sg-color__name">$color-background-gray (background)</span>
+              <span class="sg-color__name">$color-background-gray (background for image and lists)</span>
               <span class="sg-color__value"> #F6F6F6</span>
             </li>
             <li class="sg-color sg-color--night">
@@ -139,6 +143,24 @@
             <li class="sg-color sg-color--gray-5">
               <span class="sg-color__name">$color-gray-5</span>
               <span class="sg-color__value">#F9F9F9</span>
+            </li>
+            <h4>Color for Background of Project Images
+            </h4>
+            <li class="sg-color sg-color--peach-pink">
+              <span class="sg-color__name">$color-peach-pink</span>
+              <span class="sg-color__value">#f99b85</span>
+            </li>
+            <li class="sg-color sg-color--night-blue">
+              <span class="sg-color__name">$color-night-blue</span>
+              <span class="sg-color__value">#0f309c</span>
+            </li>
+            <li class="sg-color sg-color--banana-yellow">
+              <span class="sg-color__name">$color-banana-yellow</span>
+              <span class="sg-color__value">#f0b75a</span>
+            </li>
+            <li class="sg-color sg-color--cold-purple">
+              <span class="sg-color__name">$color-cold-purple</span>
+              <span class="sg-color__value">#454f8d</span>
             </li>
           </ul>
           <h3>
@@ -231,10 +253,13 @@
             <img src="img/logo1.png" alt="My Logo" class="img-responsive">
           </p>
           <h3>
-            Decorative Images
+            Landing Decorative Images
           </h3>
           <p>
-            <img src="img/double-exposure.jpg" alt="Double exposure image" class="img-responsive">
+            <img src="img/landing-image.jpg" alt="Landing Decorative Images" class="img-responsive">
+          </p>
+          <p>
+            <img src="img/landing-image-two.jpg" alt="Landing Decorative Images Two" class="img-responsive">
           </p>
           <h3>
              Project Images
@@ -245,6 +270,26 @@
           <p>
             <img src="img/project-two.jpg" alt="Project two preview image" class="img-responsive">
           </p>
+          <p>
+            <img src="img/project-three.jpg" alt="Project one preview image" class="img-responsive">
+          </p>
+          <p>
+            <img src="img/project-four.jpg" alt="Project two preview image" class="img-responsive">
+          </p>
+          <p>
+            <img src="img/styleguide.png" alt="mighty life fitness styleguide image" class="img-responsive">
+          </p>
+          <p>
+            <img src="img/fitness-brochure-one.jpg" alt="Project two preview image" class="img-responsive">
+          </p>
+          <p>
+            <img src="img/fitness-brochure-two.jpg" alt="Project two preview image" class="img-responsive">
+          </p>
+          <p>
+            <img src="img/fitness-poster.jpg" alt="Project two preview image" class="img-responsive">
+          </p>
+
+
 
         </section>
 
@@ -296,19 +341,63 @@
             <strong>Selector:</strong> <code>ul</code>
           </p>
           <div class="sg-component-preview">
-            <ul>
-              <li>Brand Design</li>
-              <li>Web design</li>
-              <li>Graphic design</li>
+            <ul class="row listing listings--project" >
+              <li class="listings__item  col col--6md">
+                <p class="listings__item-content ">
+                  <span class="listings__item-title">My Role:</span>
+                  <span class="listings__item-prop">graphic design, website design</span>
+                </p>
+              </li>
+              <li class="listings__item col col--6md">
+                <p class="listings__item-content ">
+                  <span class="listings__item-title">Date:</span>
+                  <span class="listings__item-prop">January - February 2018</span>
+                </p>
+              </li>
+              <li class="listings__item col col--6md">
+                <p class="listings__item-content ">
+                  <span class="listings__item-title">Type of project:</span>
+                  <span class="listings__item-prop">Academic project</span>
+                </p>
+              </li>
+              <li class="listings__item listings__item--alt  col col--6md">
+                <p class="listings__item-content ">
+                  <span class="listings__item-title">Group Member:</span>
+                  <span class="listings__item-prop">Charlie Chao, Lance Zheng</span>
+                </p>
+              </li>
             </ul>
           </div>
           <div class="sg-component-code">
             <p class="sg-component-label">Code</p>
-            <pre><code>&lt;ul&gt;
-  &lt;li&gt;Weightlifting&lt;/li&gt;
-  &lt;li&gt;TRX&lt;/li&gt;
-  &lt;li&gt;Cardio&lt;/li&gt;
-&lt;/ul&gt;</code></pre>
+            <pre><code>
+&lt;ul class=&quot;row listing listings--project &quot; &gt;
+    &lt;li class=&quot;listings__item  col col--6md&quot;&gt;
+        &lt;p class="listings__item-content &quot;&gt;
+          &lt;span class=&quot;listings__item-title&quot;&gt;My Role:&lt;/span&gt;
+          &lt;span class=&quot;listings__item-prop&quot;&gt;graphic design, website design&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;listings__item col col--6md&quot;&gt;
+        &lt;p class=&quot;listings__item-content &quot;&gt;
+            &lt;span class=&quot;listings__item-title&quot;&gt;Date:&lt;/span&gt;
+            &lt;span class=&quot;listings__item-prop&quot;&gt;January - February 2018&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;listings__item col col--6md&quot;&gt;
+        &lt;p class=&quot;listings__item-content &quot;&gt;
+            &lt;span class=&quot;listings__item-title&quot;&gt;Type of project:&lt;/span&gt;
+            &lt;span class=&quot;listings__item-prop&quot;&gt;Academic project&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;listings__item listings__item--alt  col col--6md&quot;&gt;
+        &lt;p class=&quot;listings__item-content &quot;&gt;
+            &lt;span class=&quot;listings__item-title&quot;&gt;Group Member:&lt;/span&gt;
+            &lt;span class=&quot;listings__item-prop&quot;&gt;Charlie Chao, Lance Zheng&lt;/span&gt;
+        &lt;/p&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+          </code></pre>
           </div>
           <h3>
             Ordered List
@@ -435,44 +524,90 @@
           </p>
 
             <div class="sg-component-preview">
-              <h2>Projects</h2>
+              <h2>Works</h2>
+              <ul class="row listings " >
+                <li class="listings__item  listings__project--one  col col--6md">
+                  <a href="project-one.html" class="project--link">
 
-              <ul class="listings row" >
-
-                <li class="listings__item listings__item--alt col col--6md">
-                  <p class="listings__item-content ">
-                    <span class="listings__item-title">Mighty Life Fitness </span>
-                    <span class="listings__item-prop">Brand / Web / Graphic Design</span>
-                  </p>
+                    <p class="listings__item--content--landing ">
+                      <span class="listings__item-title">Mighty Life Fitness </span>
+                      <span class="listings__item-prop">Brand / Web / Graphic Design</span>
+                    </p>
+                  </a>
                 </li>
 
-                <li class="listings__item listings__item--alt col col--6md">
-                  <p class="listings__item-content ">
+                <li class="listings__item listings__project--two col col--6md">
+                  <a href="project-two.html" class="project--link">
+                  <p class="listings__item--content--landing">
                     <span class="listings__item-title">Forage</span>
                     <span class="listings__item-prop">Interface Design</span>
                   </p>
+                </a>
+                </li>
+                <li class="listings__item  listings__project--three  col col--6md">
+                  <a href="project-three.html" class="project--link">
+
+                    <p class="listings__item--content--landing ">
+                      <span class="listings__item-title"> MLGB E-sports club
+                      </span>
+                      <span class="listings__item-prop"> User Research / Interface Design
+                      </span>
+                    </p>
+                  </a>
                 </li>
 
+                <li class="listings__item listings__project--four  col col--6md">
+                  <a href="project-four.html" class="project--link">
+                  <p class="listings__item--content--landing">
+                    <span class="listings__item-title">Extreme Heat</span>
+                    <span class="listings__item-prop">Web / Graphic Design</span>
+                  </p>
+                </a>
+                </li>
               </ul>
 
             </div>
             <div class="sg-component-code">
                 <p class="sg-component-label">Code</p>
             <pre><code>
-&lt;h2&gt;Projects&lt;/h2&gt;
+&lt;h2&gt;Works&lt;/h2&gt;
 
-&lt;ul class=&quot;listings row&quot;&gt;
-  &lt;li class=&quot;listings__item listings__item--alt col col--6md&quot;&gt;
-    &lt;p class=&quot;listings__item-content &quot;&gt;
-      &lt;span class=&quot;listings__item-title&quot;&gt;Mighty Life Fitness&lt;/span&gt;
-      &lt;span class=&quot;listings__item-prop&quot;&gt;Brand / Web / Graphic Design&lt;/span&gt;
-    &lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li class=&quot;listings__item listings__item--alt col col--6md&quot;&gt;
-    &lt;p class=&quot;listings__item-content&quot;&gt;
-      &lt;span class=&quot;listings__item-title&quot;&gt;Forage&lt;/span&gt;
-      &lt;span class=&quot;listings__item-prop&quot;&gt;Interface Design&lt;/span&gt;
-    &lt;/p&gt;
+&lt;ul class=&quot;row listings &quot;&gt;
+    &lt;li class=&quot;listings__item  listings__project--one  col col--6md&quot;&gt;
+      &lt;a href=&quot;project-one.html&quot; class=&quot;project--link&quot;&gt;
+        &lt;p class=&quot;listings__item--content--landing &quot;&gt;
+          &lt;span class=&quot;listings__item-title&quot;&gt;Mighty Life Fitness &lt;/span&gt;
+          &lt;span class=&quot;listings__item-prop&quot;&gt;Brand / Web / Graphic Design&lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li class=&quot;listings__item listings__project--two col col--6md&quot;&gt;
+      &lt;a href=&quot;project-two.html&quot; class=&quot;project--link&quot;&gt;
+      &lt;p class=&quot;listings__item--content--landing&quot;&gt;
+        &lt;span class=&quot;listings__item-title&quot;&gt;Forage&lt;/span&gt;
+        &lt;span class=&quot;listings__item-prop&quot;&gt;Interface Design&lt;/span&gt;
+      &lt;/p&gt;
+    &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;listings__item  listings__project--three  col col--6md&quot;&gt;
+      &lt;a href=&quot;project-three.html&quot; class=&quot;project--link&quot;&gt;
+        &lt;p class=&quot;listings__item--content--landing &quot;&gt;
+          &lt;span class=&quot;listings__item-title&quot;&gt; MLGB E-sports club
+          &lt;/span&gt;
+          &lt;span class=&quot;listings__item-prop&quot;&gt; User Research / Interface Design
+          &lt;/span&gt;
+        &lt;/p&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+
+    &lt;li class=&quot;listings__item listings__project--four  col col--6md&quot;&gt;
+      &lt;a href=&quot;project-four.html&quot; class=&quot;project--link&quot;&gt;
+      &lt;p class=&quot;listings__item--content--landing&quot;&gt;
+        &lt;span class=&quot;listings__item-title&quot;&gt;Extreme Heat&lt;/span&gt;
+        &lt;span class=&quot;listings__item-prop&quot;&gt;Web / Graphic Design&lt;/span&gt;
+      &lt;/p&gt;
+    &lt;/a&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 

@@ -638,27 +638,40 @@ img {
   background-position: top center;
   background-size: cover;
 }
-.listings__project--one:hover,.listings__project--one:active,.listings__project--one:hover:focus{
-  background-image: none;
-  background-color: var(--color-night-blue);
+.listings__project--one:hover,.listings__project--one:hover:focus{
+  transform: scale(1.05);
 }
+.listings__project--one:active,.listings__project--one--active{
+  background-image: url(../img/project-one-active.jpg);
+  background-position: top center;
+  background-size: cover;
+}
+
 .listings__project--two{
   background-image: url(../img/project-two.jpg);
   background-position: top center;
   background-size: cover;
 }
-.listings__project--two:hover,.listings__project--two:active,.listings__project--two:hover:focus{
-  background-image: none;
-  background-color: var(--color-banana-yellow);
+.listings__project--two:hover,.listings__project--two:hover:focus{
+  transform: scale(1.05);
+}
+.listings__project--two:active,.listings__project--two--active{
+  background-image: url(../img/project-two-active.jpg);
+  background-position: top center;
+  background-size: cover;
 }
 .listings__project--three{
   background-image: url(../img/project-three.jpg);
   background-position: top center;
   background-size: cover;
 }
-.listings__project--three:hover,.listings__project--three:active,.listings__project--three:hover:focus{
-  background-image: none;
-  background-color: var(--color-peach-pink);
+.listings__project--three:hover,.listings__project--three:hover:focus{
+  transform: scale(1.05);
+}
+.listings__project--three:active,.listings__project--three--active{
+  background-image: url(../img/project-three-active.jpg);
+  background-position: top center;
+  background-size: cover;
 }
 .listings__project--four{
   background-image: url(../img/project-four.jpg);
@@ -666,9 +679,13 @@ img {
   background-size: cover;
 }
 
-.listings__project--four:hover,.listings__project--four:active, .listings__project--four:hover:focus{
-  background-image: none;
-  background-color: var(--color-cold-purple);
+.listings__project--four:hover, .listings__project--four:hover:focus{
+  transform: scale(1.05);
+}
+.listings__project--four:active,.listings__project--four--active{
+  background-image: url(../img/project-four-active.jpg);
+  background-position: top center;
+  background-size: cover;
 }
 /* --------------------------------------------------------------------------*/
 /* 11. Others                                                                */

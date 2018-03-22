@@ -217,6 +217,10 @@
 .sg-color--day {
   background-color: white;
 }
+.sg-color-warm-yellow {
+  background-color:var(--color-warm-yellow);
+  
+}
 .sg-color-background-gray {
   background-color:var(--color-background-gray);
 }
@@ -272,6 +276,22 @@
 
 .sg-color--anchor-hover {
   background-color: var(--color-anchor-hover);
+  color: white;
+}
+.sg-color--peach-pink{
+  background-color: var(--color-peach-pink);
+  color: white;
+}
+.sg-color--night-blue{
+  background-color: var(--color-night-blue);
+  color: white;
+}
+.sg-color--banana-yellow{
+  background-color: var(--color-banana-yellow);
+  color: white;
+}
+.sg-color--cold-purple{
+  background-color: var(--color-cold-purple);
   color: white;
 }
 
