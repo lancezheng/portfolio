@@ -77,6 +77,9 @@
   padding: 0 1rem;
   max-width: 39rem; /* 624px */
 }
+.gallery{
+  max-width: 100%;
+}
 
 /* --------------------------------------------------------------------------*/
 /* 04. Navigation                                                            */
@@ -219,7 +222,7 @@
 }
 .sg-color-warm-yellow {
   background-color:var(--color-warm-yellow);
-  
+
 }
 .sg-color-background-gray {
   background-color:var(--color-background-gray);
