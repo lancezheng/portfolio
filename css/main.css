@@ -550,11 +550,15 @@ img {
 }
 
 .project__title {
+  margin-top:1rem;
   margin-bottom: 0;
   font-size: 2.370192597rem;
   line-height: 1.3333;
   color: var(--color-night);
   text-align: center;
+}
+.project-subtitle{
+  margin-top: 3rem;
 }
 
 .project--link{
@@ -572,6 +576,9 @@ img {
  padding-top:2em;
  padding-bottom:2em;
  margin-bottom:1em;
+}
+.project-image:hover{
+  transform: scale(1.05);
 }
 
 /* --------------------------------------------------------------------------*/
@@ -638,7 +645,7 @@ img {
   background-position: top center;
   background-size: cover;
 }
-.listings__project--one:hover,.listings__project--one:hover:focus{
+.listings__project--one:hover,.listings__project--one:focus{
   transform: scale(1.05);
 }
 .listings__project--one:active,.listings__project--one--active{
@@ -652,7 +659,7 @@ img {
   background-position: top center;
   background-size: cover;
 }
-.listings__project--two:hover,.listings__project--two:hover:focus{
+.listings__project--two:hover,.listings__project--two:focus{
   transform: scale(1.05);
 }
 .listings__project--two:active,.listings__project--two--active{
@@ -665,7 +672,7 @@ img {
   background-position: top center;
   background-size: cover;
 }
-.listings__project--three:hover,.listings__project--three:hover:focus{
+.listings__project--three:hover,.listings__project--three:focus{
   transform: scale(1.05);
 }
 .listings__project--three:active,.listings__project--three--active{
@@ -679,7 +686,7 @@ img {
   background-size: cover;
 }
 
-.listings__project--four:hover, .listings__project--four:hover:focus{
+.listings__project--four:hover, .listings__project--four:focus{
   transform: scale(1.05);
 }
 .listings__project--four:active,.listings__project--four--active{
@@ -842,6 +849,7 @@ img {
   }
   .landing-image-two{
      max-width: 80%;
+     margin-left: 5%
   }
 
 }
