@@ -50,7 +50,7 @@
   --font-secondary: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
 
   /* Metrics */
-  --wrap-lg: 66rem;
+  --wrap-lg: 58rem;
   --wrap-md: 30rem;
   --wrap-sm: 22rem;
   --wrap-padding: 0rem;
@@ -163,6 +163,7 @@ code {
 img {
   vertical-align: top;
 }
+
 
 /* --------------------------------------------------------------------------*/
 /* 02. Utilities                                                             */
@@ -516,7 +517,7 @@ img {
 }
 
 .portfolio--project--one{
-  background-image: url(../img/project-one.jpg);
+  background-image: url(../img/project-1.jpg);
   background-position: top center;
 }
 
@@ -578,7 +579,8 @@ img {
  margin-bottom:1em;
 }
 .project-image:hover{
-  transform: scale(1.05);
+  transform: scale(1.02);
+  transition: transform 0.3s;
 }
 
 /* --------------------------------------------------------------------------*/
@@ -641,12 +643,13 @@ img {
 
 
 .listings__project--one{
-  background-image: url(../img/project-one.jpg);
+  background-image: url(../img/project-1.jpg);
   background-position: top center;
   background-size: cover;
 }
 .listings__project--one:hover,.listings__project--one:focus{
   transform: scale(1.05);
+  transition: transform 0.3s;
 }
 .listings__project--one:active,.listings__project--one--active{
   background-image: url(../img/project-one-active.jpg);
@@ -661,6 +664,7 @@ img {
 }
 .listings__project--two:hover,.listings__project--two:focus{
   transform: scale(1.05);
+  transition: transform 0.3s;
 }
 .listings__project--two:active,.listings__project--two--active{
   background-image: url(../img/project-two-active.jpg);
@@ -674,6 +678,7 @@ img {
 }
 .listings__project--three:hover,.listings__project--three:focus{
   transform: scale(1.05);
+  transition: transform 0.3s;
 }
 .listings__project--three:active,.listings__project--three--active{
   background-image: url(../img/project-three-active.jpg);
@@ -688,6 +693,7 @@ img {
 
 .listings__project--four:hover, .listings__project--four:focus{
   transform: scale(1.05);
+  transition: transform 0.3s;
 }
 .listings__project--four:active,.listings__project--four--active{
   background-image: url(../img/project-four-active.jpg);
