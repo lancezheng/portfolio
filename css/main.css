@@ -500,7 +500,11 @@ img {
 .footer__copyright {
   margin-bottom: 0;
 }
-
+.footer__note {
+  margin-top: 0.25rem;
+  font-size: 0.75rem;
+  
+}
 
 /* --------------------------------------------------------------------------*/
 /* 9. Project                                                                  */
@@ -661,6 +665,7 @@ img {
   background-image: url(../img/project-two.jpg);
   background-position: top center;
   background-size: cover;
+
 }
 .listings__project--two:hover,.listings__project--two:focus{
   transform: scale(1.05);
