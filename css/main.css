@@ -791,8 +791,8 @@ img {
     font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   }
   .intro-work{
-    font-size:1.6333rem;
-    font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+    font-size:0.8333rem;
+    font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
   }
   .landing-image{
      max-width: 66%;
@@ -800,19 +800,22 @@ img {
 
   .intro-text{
   padding-top: 7%;
+  padding-left: 0;
   }
 }
 
 
-@media screen and (max-width: 57em) {
+@media screen and (max-width: 982px) {
 
   .intro-name{
     font-size:1.6333rem;
     font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+    font-style: bold;
   }
   .intro-work{
-    font-size:1.1333rem;
-    font-family: 'Exo', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+    font-size:0.7333rem;
+    font-family: 'Open Sans', 'Helvetica Nueue', Helvetica, Arial, sans-serif;
+
   }
   .bio{
     font-size: 0.8rem;
@@ -821,14 +824,24 @@ img {
      max-width: 95%;
   }
 }
+@media screen and (max-width: 860px) {
+
+  .intro-name{
+    font-size:1.4333rem;
+
+  }
+  .intro-work{
+    font-size:0.5333rem;
+
+  }
+
+}
 @media screen and (max-width: 40em)  {
 
   .img--logo{
     max-width: 2rem;
   }
-  .landing-image{
-     max-width: 80%;
-  }
+
   #name {
     padding-top: 5rem;
     padding-bottom: 8em;
@@ -844,6 +857,7 @@ img {
   .intro-text{
     width:100%;
     margin-left:10%;
+
   }
 
 }
